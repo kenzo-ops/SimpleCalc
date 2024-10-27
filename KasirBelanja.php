@@ -1,14 +1,20 @@
  <?php
 
-    $namaPembeli = $_POST['nama'];
+ error_reporting(0);
+ ini_set('display_errors',0);
+
+  $namaPembeli = $_POST['nama'];
     $brng1 = $_POST['barang1'];
     $brng2 = $_POST['barang2'];
     $brng3 = $_POST['barang3'];
-    $brng4 = $_POST['barang4'];
+    $brng4 = $_POST['barang4']; 
 
     
     $total = $brng1 + $brng2 + $brng3 + $brng4;
     $diskon = $total - ($total * (5/100));
+ 
+
+    
     ?>
 
  <!DOCTYPE html>
@@ -43,7 +49,7 @@
          <input type="number" name="barang3" placeholder="Harga">
          <label for="number">Barang 4</label>
          <input type="number" name="barang4" placeholder="Harga">
-         <button type="submit">Submit</button>
+         <button type="submit" name="submit">Submit</button>
      </form>
 
      <div class="outp">
