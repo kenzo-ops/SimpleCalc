@@ -55,6 +55,7 @@ form input, button {
 }
 
 form button {
+    margin-top: 2.5vh;
     padding: 2vh;
     font-weight: 900;
     background: #1230AE;
