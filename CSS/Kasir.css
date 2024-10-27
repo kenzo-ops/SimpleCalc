@@ -3,7 +3,26 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+    background: rgb(24,1,97);
+    background: linear-gradient(90deg, rgba(24,1,97,1) 0%, rgba(79,23,135,1) 100%);
     align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    color: #EBD3F8;
+}
+
+.title span {
+    color: #6C48C5;
+}
+
+.content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 form {
@@ -27,8 +46,11 @@ form label {
     text-align: left;
 }
 
+form input {
+    padding: 2vh;
+}
+
 form input, button {
-    padding: 1vh;
     border: none;
 }
 

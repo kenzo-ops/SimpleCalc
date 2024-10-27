@@ -6,6 +6,7 @@
     $brng3 = $_POST['barang3'];
     $brng4 = $_POST['barang4'];
 
+    
     $total = $brng1 + $brng2 + $brng3 + $brng4;
     $diskon = $total - ($total * (5/100));
     ?>
@@ -20,12 +21,17 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="Kasir.css">
+     <link rel="stylesheet" href="/CSS/Kasir.css">
  </head>
 
  <body>
+
+    <div class="title">
+        <h1>Kasir<span>Belanja</span></h1>
+    </div>
     
-     <form method="POST" autocomplete="off"> 
+ <div class="content">
+    <form method="POST" autocomplete="off"> 
         <h2>Masukkan Data</h2>
          <label for="name">Nama Pembeli</label>
          <input type="text" name="nama" placeholder="Nama">
@@ -79,14 +85,15 @@
         ?>
      </h4>
      <h4>
-        Diskon : </br>
+        Diskon 5% : </br>
         Rp.<?php 
-        
             echo $diskon;
 
         ?>
      </h4>
      </div>
     
-</div>
+ </div>
+     
+
  </html>
